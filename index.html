@@ -3,35 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>example</title>
+    <title>I Love You Yasmine</title>
+    <style>
+        body {background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+
+        .heart-container {
+            position: relative;
+            animation: heartbeat 2s infinite;
+        }
+
+        .text {
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            20%, 40%, 60%, 80% {
+                transform: scale(1.2);
+            }
+            30%, 50%, 70% {
+                transform: scale(0.9);
+            }
+        }
+
+        .heart {
+            position: absolute;
+            width: 50px;
+            height: 45px;
+            
+            clip-path: polygon(50% 0%, 100% 35%, 75% 100%, 50% 80%, 25% 100%, 0% 35%);
+            transform: rotate(-45deg);
+            animation: heartBeat 1.5s infinite;
+        }
+
+        @keyframes heartBeat {
+            0% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.3) rotate(-45deg);
+            }
+            100% {
+                transform: scale(1) rotate(-45deg);
+            }
+        }
+    </style>
 </head>
-<style>
-.navbar{ border:2px solid rgb(3, 234, 247);
-
-}
-
-</style>
 <body>
-    <div class="navbar">
-        <ul>
-            <li>
-                home
-            </li>
-            <li>
-                ggkgkh
-            </li>
-            <li>
-                videos
-            </li>
-            <li>
-                about
-            </li>
-            <li>
-                vision
-            </li>
-        </ul>
-        
+    <div class="heart-container">
+        <div class="heart"></div>
+        <div class="text">I love you Yasmine</div>
     </div>
-    
 </body>
 </html>
