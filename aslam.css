@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+#logo img{ 
+   
+   height: 50px; 
+   object-fit: cover;
+   border-radius: 60px;
+   margin:10px 10px;
+}
+#logo{
+    
+}
+#main{
+    display: flex;
+    border: 2px solid gray;
+    background-color: rgb(10, 9, 9);
+    border-radius: 80px;
+}
+#nav li{
+    list-style: none;
+}
+#nav li a{
+    color:white;
+    text-decoration: none;
+    
+    margin: 0px 50px;
+
+}
+#nav li a:hover{
+color: cyan;
+border-right: 2px solid cyan;
+padding-right: 10px;
+
+}
+#snav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    height: 11.8%;
+    align-items: center;
+    
+width: 94%;
+    
+    position: absolute;
+    
+}
