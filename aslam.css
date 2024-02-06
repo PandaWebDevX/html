@@ -77,7 +77,7 @@ width: 94%;
     
      }
       #snav {
-        /* border: 2px solid red;  */
+        border: 2px solid red;  
         display: flex;
         flex-direction: row;
         padding-left: 20px;
